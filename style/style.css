@@ -1,0 +1,115 @@
+/* header part start */
+
+  .header{
+    background-color: #0872b9;
+  }
+
+  .header .header-left-content{
+    padding: 10px 0px;
+  }
+  .header .header-left-content p{
+    color: white;
+  }
+
+  .header .header-right-content{
+    padding: 10px 0px;
+  }
+  .header .header-right-content ul{
+    display: flex;
+    justify-content: flex-end;
+  }
+  /* .header .header-right-content ul li{} */
+  .header .header-right-content ul li a{
+    font-size: 14px;
+    color: white;
+    margin-left: 20px;
+   
+}
+  .header .header-right-content ul li a:hover{
+    color: #335533;
+  }
+  /* .header .header-right-content ul li a i{} */
+
+/* header part end */
+
+/* nav part start */
+
+/* .nav{} */
+.nav .logo{
+  padding: 20px 0px;
+}
+.nav .logo img{
+  height: 40px;
+}
+
+.nav .nav-links{
+  padding: 20px 0px;
+}
+.nav .nav-links ul{
+  display: flex;
+  justify-content: flex-end;
+}
+/* .nav .nav-links ul li{} */
+.nav .nav-links ul li a{
+  padding: 10px 8px;
+  text-transform: uppercase;
+  color: #353535;
+}
+
+.nav .nav-links ul li a:hover{
+  color: #0872b9;
+}
+
+/* nav part end */
+
+/* banner part start */
+#banner{
+  background-image: url('../images/banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#banner .overlay{
+  background-color: rgba(0, 0, 0, .4);
+}
+#banner .banner-content{
+  text-align: right;
+  padding: 90px 0px;
+}
+#banner .banner-content h2{
+  font-size: 30px;
+  line-height: 30px;
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+#banner .banner-content h1{
+  color: white;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+#banner .banner-content p{
+  font-size: 13px;
+  color: white;
+  margin-bottom: 30px;
+}
+#banner .banner-content ul{
+  display:flex;
+  justify-content: flex-end;
+}
+/* #banner .banner-content ul li{} */
+#banner .banner-content ul li a{
+  padding: 10px 15px;
+  border: 1px solid white;
+  color: white;
+  margin-left: 25px;
+}
+
+#banner .banner-content ul li a:hover{
+  background-color: #0872b9;
+}
+/* banner part end */
