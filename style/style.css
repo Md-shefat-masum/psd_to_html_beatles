@@ -533,11 +533,12 @@
 /* footer part start */
 .footer {
   background-color: #353535;
+  padding-top: 20px;
 }
 
-.footer .footer_body {}
+/* .footer .footer_body {} */
 
-.footer .footer_body img {
+.footer .footer_body .logo {
   height: 40px;
 }
 
@@ -548,38 +549,96 @@
   margin-top: 30px;
 }
 
-.footer .footer_body.other_cols {}
+/* .footer .footer_body.other_cols {} */
 
 .footer .footer_body.other_cols h4 {
-  text-align: center;
   color: white;
   font-size: 16px;
   font-weight: 600;
+  margin-bottom: 45px;
 }
 
-.footer .footer_body.other_cols ul {}
+/* .footer .footer_body.other_cols ul {} */
 
 .footer .footer_body.other_cols ul li {
-  display:flex;
+  display: flex;
+  margin-bottom: 20px;
 }
 
-.footer .footer_body.other_cols ul li .left {}
+/* .footer .footer_body.other_cols ul li .left {} */
 
 .footer .footer_body.other_cols ul li .left i {
   display: inline-block;
   height: 35px;
   width: 35px;
   background-color: #5bc5f4;
-  li
+  line-height: 35px;
+  text-align: center;
   border-radius: 50%;
+  color: white;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
 }
 
-.footer .footer_body.other_cols ul li .right {}
+.footer .footer_body.other_cols ul li .left .call_icon {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+/* .footer .footer_body.other_cols ul li .right {} */
 
 .footer .footer_body.other_cols ul li .right p {
   margin-top: 0;
+  font-size: 13px;
+  line-height: 17px;
+  padding-left: 10px;
+}
+
+.footer .footer_body.other_cols .footer_shorcut_links {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer .footer_body.other_cols .footer_shorcut_links li {
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.footer .footer_body.other_cols .footer_shorcut_links li a {
+  font-size: 13px;
+  color: white;
+  line-height: 23px;
+  font-weight: 400;
+  font-family: open-sans;
+}
+
+.footer .footer_body.other_cols .footer_shorcut_links li a:hover{
+  color: #5bc5f4;
+}
+.footer .footer_body.other_cols.gallery{
+  padding: 0;
+}
+.footer .footer_body.other_cols.gallery img{
+  width: 100%;
+  margin-bottom: 20px;
+  /* object-fit: cover; */
+}
+
+/* bottom footer */
+
+.bottom_footer p{
+  background-color: #555555;
+  text-align: center;
+  color: white;
+  padding: 15px 0px;
+}
+
+.bottom_footer p a{
+  font-family: open-sans;
+  color:#5bc5f4;
 }

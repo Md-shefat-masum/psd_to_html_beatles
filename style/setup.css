@@ -80,7 +80,7 @@ a:hover {
 .container {
   width: 960px;
   margin: 0 auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 
