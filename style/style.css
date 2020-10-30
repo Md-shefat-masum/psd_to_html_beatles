@@ -369,6 +369,15 @@
 .team .team_body .image {
   position: relative;
   overflow: hidden;
+  transition: all linear .3s;
+  -webkit-transition: all linear .3s;
+  -moz-transition: all linear .3s;
+  -ms-transition: all linear .3s;
+  -o-transition: all linear .3s;
+}
+
+.team .team_body:hover .image{
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, .4);
 }
 
 .team .team_body .image:hover ul{
@@ -421,6 +430,15 @@
   font-size: 16px;
   line-height: 16px;
   margin-top: 10px;
+  transition: all linear .3s ;
+  -webkit-transition: all linear .3s ;
+  -moz-transition: all linear .3s ;
+  -ms-transition: all linear .3s ;
+  -o-transition: all linear .3s ;
+}
+
+.team .team_body:hover h3{
+  color: #5bc5f4;
 }
 
 .team .team_body h4 {
