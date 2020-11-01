@@ -1,0 +1,66 @@
+.main {
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 1200px;
+    margin:  0 auto;
+}
+div {
+    border: 1px solid red;
+    margin: 10px 0px;
+}
+
+.main .top {
+    height: 120px;
+    background-color: rgb(41, 9, 71);
+    display: flex;
+}
+
+.main .top .left {
+    width: 50%;
+    background: coral;
+}
+
+.main .top .right {
+    width: 50%;
+    background: rgb(131, 57, 30);
+}
+
+.main .middle {
+    height: 400px;
+    background: brown;
+    display: flex;
+}
+
+.main .middle .left {
+    width: 70%;
+    background: rgb(23, 63, 90);
+}
+
+.main .middle .right {
+    width: 30%;
+    background: rgba(63, 20, 4, 0.582);
+}
+
+.main .bottom {
+    height: 300px;
+    background: cadetblue;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main .bottom .left {
+    width: 33%;
+    background: rgb(131, 57, 30);
+}
+
+.main .bottom .mid {
+    width: 33%;
+    background: rgb(131, 57, 30);
+}
+
+.main .bottom .right {
+    width: 33%;
+    background: rgb(131, 57, 30);
+}
