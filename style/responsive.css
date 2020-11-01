@@ -2,33 +2,80 @@
     .header .header-left-content p {
         font-size: 11px;
     }
+
     .header .header-right-content ul li a {
         font-size: 10px;
     }
+
     #banner .banner-content h1 {
         font-size: 30px;
     }
+
     .about_us .about_me p {
         text-align: justify;
     }
+
+    .nav .nav-links {
+        position: relative;
+        border: 1px solid red;
+        height: 100%;
+        padding: 0;
+    }
+
+    .nav .nav-links .hamburger {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        color: black;
+        z-index: 99;
+    }
+
+    .nav .nav-links .nav-all-links {
+        /*display: none;
+        */
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        background: #0872b9;
+        position: fixed;
+        right: 0;
+        width: 80%;
+        clip-path: circle(100px at 90% -10%);
+        transition: all 1s ease-out;
+        -webkit-transition: all 1s ease-out;
+        -moz-transition: all 1s ease-out;
+        -ms-transition: all 1s ease-out;
+        -o-transition: all 1s ease-out;
+    }
+
+    .nav .nav-links .nav-all-links.open{
+        clip-path: circle(1000px at 90% -10%);
+    }
+
+    .nav .nav-links ul li a {
+        color: white;
+        display: block;
+        padding: 17px 25px;
+        text-align: left;
+    }
+
+    .nav .nav-links ul li a:hover {
+        color: #5bc5f4;
+    }
+
 }
 
-@media (min-width: 576px) and (max-width: 767.98px) {
-    
-}
+@media (min-width: 576px) and (max-width: 767.98px) {}
 
-@media (min-width: 768px) and (max-width: 991.98px) {
-    
-}
+@media (min-width: 768px) and (max-width: 991.98px) {}
 
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    
-}
+@media (min-width: 992px) and (max-width: 1199.98px) {}
 
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-    
-}
+@media (min-width: 1200px) and (max-width: 1399.98px) {}
 
-@media (min-width: 1400px) {
-    
-}
+@media (min-width: 1400px) {}
