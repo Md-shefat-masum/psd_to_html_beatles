@@ -4,10 +4,11 @@
     flex-wrap: wrap;
     flex-direction: column;
     width: 1200px;
-    margin:  0 auto;
+    margin: 0 auto;
 }
+
 div {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin: 10px 0px;
 }
 
@@ -31,6 +32,7 @@ div {
     height: 400px;
     background: brown;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .main .middle .left {
@@ -57,10 +59,84 @@ div {
 
 .main .bottom .mid {
     width: 33%;
-    background: rgb(131, 57, 30);
+    background: rgb(7, 26, 68);
 }
 
 .main .bottom .right {
     width: 33%;
-    background: rgb(131, 57, 30);
+    background: rgb(39, 16, 8);
 }
+
+@media screen and (max-width:575px) {
+    .main{
+        width: 575px;
+    }
+    .main .bottom .left {
+        width: 100%;
+        background: rgb(131, 57, 30);
+    }
+    .main .bottom .mid {
+        width: 50%;
+        background: rgb(7, 26, 68);
+    }
+    
+    .main .bottom .right {
+        width: 49%;
+        background: rgb(39, 16, 8);
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .main{
+        width: 576px;
+    }
+    .main .bottom .left {
+        width: 50%;
+        background: rgb(131, 57, 30);
+    }
+    .main .bottom .mid {
+        width: 49%;
+        background: rgb(7, 26, 68);
+    }
+    
+    .main .bottom .right {
+        width: 70%;
+        background: rgb(39, 16, 8);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .main{
+        width: 768px;
+    }
+
+    
+    .main .bottom .left {
+        width: 50%;
+        background: rgb(131, 57, 30);
+    }
+    .main .bottom .mid {
+        width: 49%;
+        background: rgb(7, 26, 68);
+    }
+    
+    .main .bottom .right {
+        width: 100%;
+        background: rgb(39, 16, 8);
+    }
+
+    .main .middle .left {
+        width: 100%;
+        background: rgb(23, 63, 90);
+    }
+    .main .middle .right {
+        width: 100%;
+        background: rgba(63, 20, 4, 0.582);
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 1200px) and (max-width: 1399px) {}
+
+@media (min-width: 1400px) {}
