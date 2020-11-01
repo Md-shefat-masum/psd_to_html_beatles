@@ -1,0 +1,34 @@
+@media (max-width: 575.98px) {
+    .header .header-left-content p {
+        font-size: 11px;
+    }
+    .header .header-right-content ul li a {
+        font-size: 10px;
+    }
+    #banner .banner-content h1 {
+        font-size: 30px;
+    }
+    .about_us .about_me p {
+        text-align: justify;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    
+}
+
+@media (min-width: 1400px) {
+    
+}
