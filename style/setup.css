@@ -76,11 +76,14 @@ a:hover {
   text-decoration: none;
 }
 
+.hamburger{
+  display: none;
+}
 
 .container {
   width: 1200px;
   margin: 0 auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 

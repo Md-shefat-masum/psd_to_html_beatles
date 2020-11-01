@@ -17,7 +17,7 @@
 
     .nav .nav-links {
         position: relative;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         height: 100%;
         padding: 0;
     }
@@ -33,6 +33,7 @@
         -o-transform: translateY(-50%);
         color: black;
         z-index: 99;
+        display: inline-block;
     }
 
     .nav .nav-links .nav-all-links {
@@ -44,24 +45,26 @@
         background: #0872b9;
         position: fixed;
         right: 0;
+        top: 0;
         width: 80%;
-        clip-path: circle(100px at 90% -10%);
+        clip-path: circle(100px at 90% -20%);
         transition: all 1s ease-out;
         -webkit-transition: all 1s ease-out;
         -moz-transition: all 1s ease-out;
         -ms-transition: all 1s ease-out;
         -o-transition: all 1s ease-out;
+        z-index: 8;
     }
 
     .nav .nav-links .nav-all-links.open{
-        clip-path: circle(1000px at 90% -10%);
+        clip-path: circle(1200px at 90% -20%);
     }
 
     .nav .nav-links ul li a {
         color: white;
         display: block;
         padding: 17px 25px;
-        text-align: left;
+        text-align: center;
     }
 
     .nav .nav-links ul li a:hover {
