@@ -1,6 +1,6 @@
 let siteData = {
     top_gretting: {
-        content: 'Welcome to my site',
+        content: 'Welcome to my site 2',
         section_name: 'header section'
     },
     header_social_links: {
