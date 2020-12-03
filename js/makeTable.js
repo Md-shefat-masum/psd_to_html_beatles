@@ -1,24 +1,27 @@
-// console.log(siteData);
-
-// console.log(siteData.three);
-// console.log(siteData.two);
-
-let data = new FormData();
-data.set('data', siteData);
-
-// $.post("http://sas.sobujdiganta.com/data.php",{name: JSON.stringify(siteData)},function(e){
-//     console.log(e);
-// })
-
 $.get('http://sas.sobujdiganta.com/getData.php', function (e) {
     console.log(JSON.parse(e));
+
     siteData = JSON.parse(e);
+    function makeTAble(key,object){
+        // console.log(object);
+        let inputField = `
+            <div class="form-control mb-3">
+                <label for="" class="mb-3">${key}</label>
+                <textarea type="text" class="form-control" id="${key}" value="">${object.content}</textarea>
+            </div>
+        `;
+
+        $('#control_form').append(inputField);
+    }
+
     for (const key in siteData) {
         if (siteData.hasOwnProperty(key)) {
             const element = siteData[key];
     
             if (key === 'header_logo') {
                 $(`#${key}`).attr('src', element.content);
+
+                makeTAble(key,element)
     
             } else if (key === 'header_social_links') {
                 // console.log(key, element);
@@ -67,25 +70,31 @@ $.get('http://sas.sobujdiganta.com/getData.php', function (e) {
                             </div>
                         `;
                         // console.log(banner_list);
-                        $('#banner').html(banner_list);
+                        // $('#banner').html(banner_list);
                     }
                 }
             } else {
-                $(`#${key}`).html(element.content);
+                // $(`#${key}`).html(element.content);
+                makeTAble(key,element)
             }
-    
-    
-            // $('#'+key).html(element.content);
-    
-            // console.log( key, element );
-    
-            // console.log($(`#${key}`));
         }
     }
 
-    init_all();
+    $('.save_btn').on('click',function(){
+        for (const key in siteData) {
+            if (siteData.hasOwnProperty(key)) {
+                const element = siteData[key];
+                let value = $('#'+key).val();
+                
+                if(typeof value !== 'undefined'){
+                    console.log(value);
+                    siteData[key] = value;
+                }
+            }
+        }
+        $.post("http://sas.sobujdiganta.com/data.php",{name: JSON.stringify(siteData)},function(e){
+            console.log(e);
+        })
+    });
+    
 })
-
-
-
-// $('#top_gretting').html('test')
