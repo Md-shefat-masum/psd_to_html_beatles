@@ -103,4 +103,21 @@ $(document).ready(function () {
 
     $('.filter-container').filterizr();
 
+    let data = new FormData();
+    data.set('data',siteData);
+    // $.ajax({
+    //     method: 'POST',
+    //     url: 'http://sas.sobujdiganta.com/data.php',
+    //     data: {
+    //         datas : 'lasdjkf',
+    //     },
+    //     success: function(res){
+    //         console.log(res);
+    //     }
+    // })
+
+    $.post("http://sas.sobujdiganta.com/data.php",{name: JSON.stringify(siteData)},function(e){
+        console.log(e);
+    })
+
 })
