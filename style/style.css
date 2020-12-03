@@ -236,6 +236,10 @@
   -moz-transition: all linear .3s;
   -ms-transition: all linear .3s;
   -o-transition: all linear .3s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .service .service_body .service_icon::before {
@@ -260,7 +264,6 @@
 
 .service .service_body .service_icon img {
   height: 40px;
-  margin-top: 20px;
 }
 
 .service .service_body h3 {
@@ -617,13 +620,15 @@
   font-family: open-sans;
 }
 
-.footer .footer_body.other_cols .footer_shorcut_links li a:hover{
+.footer .footer_body.other_cols .footer_shorcut_links li a:hover {
   color: #5bc5f4;
 }
-.footer .footer_body.other_cols.gallery{
+
+.footer .footer_body.other_cols.gallery {
   padding: 0;
 }
-.footer .footer_body.other_cols.gallery img{
+
+.footer .footer_body.other_cols.gallery img {
   width: 100%;
   margin-bottom: 20px;
   /* object-fit: cover; */
@@ -631,7 +636,7 @@
 
 /* bottom footer */
 
-.bottom_footer p{
+.bottom_footer p {
   background-color: #555555;
   text-align: center;
   color: white;
@@ -639,7 +644,7 @@
   font-size: 13px;
 }
 
-.bottom_footer p a{
+.bottom_footer p a {
   font-family: open-sans;
-  color:#5bc5f4;
+  color: #5bc5f4;
 }

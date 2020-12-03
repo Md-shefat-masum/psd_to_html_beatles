@@ -5,10 +5,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beatles</title>
+    <!-- CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="style/bootstrap.css">
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> -->
+    <link rel="stylesheet" href="style/slick.css">
+    <link rel="stylesheet" href="style/slick-theme.css">
+
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="style/lightbox.min.css">
+    <link rel="stylesheet" href="style/magnific-popup.css">
+    <!-- <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
+    <link rel="stylesheet" href="style/owl/owl.theme.green.min.css"> -->
     <link rel="stylesheet" href="style/setup.css">
     <link rel="stylesheet" href="fonts/fontawesome-free-5.15.1-web/css/all.min.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
@@ -33,17 +46,17 @@
             <div class="row">
                 <div class="col-6">
                     <div class="header-left-content">
-                        <p>Welcome to Beatles edited</p>
+                        <p id="top_gretting">Welcome to Beatles edited</p>
                     </div>
                 </div>
                 <div class="col-6">
                     <div class="header-right-content">
-                        <ul>
+                        <ul id="header_social_links">
                             <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                             <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fab fa-github"></i></a></li>
                             <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                            <li><a href="#"><i class="fab fa-google"></i></a></li>
+                            <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -57,7 +70,7 @@
             <div class="row">
                 <div class="col-3">
                     <div class="logo">
-                        <img src="images/Beatles.png" alt="">
+                        <img id="header_logo" src="images/Beatles.png" alt="">
                     </div>
                 </div>
                 <div class="col-9">
@@ -80,25 +93,63 @@
     </nav>
 
     <section id="banner">
-        <div class="overlay">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6 col-sm-0"></div>
-                    <div class="col-6 col-sm-12">
-                        <div class="banner-content">
-                            <h2>Hi! we are</h2>
-                            <h1>Creative Designer</h1>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt
-                                ut
-                                labore
-                                et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-                            </p>
-                            <ul>
-                                <li><a href="#">Hire Us</a></li>
-                                <li><a href="#">Contact</a></li>
-                            </ul>
+
+        <div style="
+                    background-image: url('https://images.pexels.com/photos/4173624/pexels-photo-4173624.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                ">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-0"></div>
+                        <div class="col-md-6">
+                            <div class="banner-content">
+                                <h2>Hi! we are</h2>
+                                <h1>Creative Designer</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt
+                                    ut
+                                    labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                                </p>
+                                <ul>
+                                    <li><a href="#">Hire Us</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div style="
+                    background-image: url('https://img.freepik.com/free-photo/dark-blue-glow-dust-particle-abstract-background_35672-1414.jpg?size=626&ext=jpg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                ">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-0"></div>
+                        <div class="col-md-6">
+                            <div class="banner-content">
+                                <h2>Hi! we are</h2>
+                                <h1>Creative Designer</h1>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                    incididunt
+                                    ut
+                                    labore
+                                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+                                </p>
+                                <ul>
+                                    <li><a href="#">Hire Us</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -111,24 +162,24 @@
             <div class="row">
                 <div class="col-12">
                     <div class="common-heading">
-                        <h2>About Us</h2>
+                        <h2 id="about_us_heading">About Us</h2>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-5 col-sm-12 col-md-6 col-lg-7 col-xlg-3 col-xxlg-4">
+            <div class="row align-items-center">
+                <div class="col-5 col-sm-12 col-md-6 col-lg-4 col-xlg-3 col-xxlg-4">
                     <div class="about_image">
                         <img src="images/about-us-left-image.png" alt="about image">
                     </div>
                 </div>
-                <div class="col-7 col-sm-12 col-md-6 col-lg-5 col-xlg-9 col-xxlg-8">
+                <div class="col-7 col-sm-12 col-md-6 col-lg-8 col-xlg-9 col-xxlg-8">
                     <div class="about_me">
-                        <p>
+                        <p id="aboutme_p_1">
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor ididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                             laboris nisi ut aliquip ex ea commodo consequat.
                         </p>
-                        <p>
+                        <p id="aboutme_p_2">
                             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officiaeserunt
                             mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -145,12 +196,12 @@
             <div class="row">
                 <div class="col-12">
                     <div class="common-heading">
-                        <h2>Our Services</h2>
+                        <h2 id="our_service_heading">Our Services</h2>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-4 col-sm-12">
+            <div class="owl-carousel services owl-theme">
+                <div class="">
                     <div class="service_body">
                         <div class="service_icon">
                             <img src="images/graphics.png" alt="">
@@ -162,7 +213,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-4 col-sm-12">
+                <div class="">
                     <div class="service_body">
                         <div class="service_icon">
                             <img src="images/graphic2.png" alt="">
@@ -174,7 +225,31 @@
                         </p>
                     </div>
                 </div>
-                <div class="col-4 col-sm-12">
+                <div class="">
+                    <div class="service_body">
+                        <div class="service_icon">
+                            <img src="images/graphic3.png" alt="">
+                        </div>
+                        <h3>SEO Expert</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetpisg elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+                <div class="">
+                    <div class="service_body">
+                        <div class="service_icon">
+                            <img src="images/graphic3.png" alt="">
+                        </div>
+                        <h3>SEO Expert</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetpisg elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua.
+                        </p>
+                    </div>
+                </div>
+                <div class="">
                     <div class="service_body">
                         <div class="service_icon">
                             <img src="images/graphic3.png" alt="">
@@ -199,12 +274,25 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-3 col-sm-12 col-md-6">
-                    <div class="gallery_body">
+
+            <div class="row mt-5">
+                <div class="col-12">
+                    <ul class="d-inline-flex justify-content-start">
+                        <li><a class="btn gallery_button btn-outline-secondary mx-2" data-filter="all" href="#">All</a></li>
+                        <li><a class="btn gallery_button btn-outline-secondary mx-2" data-filter="web" href="#">Web development</a></li>
+                        <li><a class="btn gallery_button btn-outline-secondary mx-2" data-filter="2" href="#">Graphics design</a></li>
+                        <li><a class="btn gallery_button btn-outline-secondary mx-2" data-filter="3" href="#">UI/UX</a></li>
+                        <li><a class="btn gallery_button btn-outline-secondary mx-2" data-filter="4" href="#">Ecommerce</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row filter-container gallery_view">
+                <div class="col-3 col-sm-12 col-md-6  col-lg-3 filtr-item" data-category="2" data-sort="value">
+                    <div class="gallery_body" >
                         <img src="images/firstrow-up.png" alt="">
                         <div class="overlay">
-                            <a href="#">
+                            <a href="https://images.adsttc.com/media/images/5f3e/6ce3/b357/6546/6300/021b/newsletter/03_BIG_PSI_PENANG_ISLAND-B_IMAGE-BY-BIG-BJARKE-INGELS-GROUP.jpg?1597926588"
+                                data-lightbox="image-1">
                                 <i class="fa fa-link"></i>
                             </a>
                         </div>
@@ -212,17 +300,17 @@
                     <div class="gallery_body">
                         <img src="images/firstrow-bottom.png" alt="">
                         <div class="overlay">
-                            <a href="#">
+                            <a href="images/firstrow-bottom.png" data-lightbox="image" data-title="this is glass">
                                 <i class="fa fa-link"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-3 col-sm-12  col-md-6">
+                <div class="col-3 col-sm-12  col-md-6  col-lg-3  filtr-item" data-category="web" data-sort="value">
                     <div class="gallery_body">
                         <img src="images/secondrow-up.png" alt="">
                         <div class="overlay">
-                            <a href="#">
+                            <a href="images/secondrow-up.png">
                                 <i class="fa fa-link"></i>
                             </a>
                         </div>
@@ -230,17 +318,17 @@
                     <div class="gallery_body">
                         <img src="images/secondrow-bottom.png" alt="">
                         <div class="overlay">
-                            <a href="#">
+                            <a href="images/secondrow-up.png">
                                 <i class="fa fa-link"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-3 col-sm-12  col-md-6">
+                <div class="col-3 col-sm-12  col-md-6  col-lg-3  filtr-item" data-category="1" data-sort="value">
                     <div class="gallery_body">
                         <img src="images/thirdrow-up.png" alt="">
                         <div class="overlay">
-                            <a href="#">
+                            <a href="images/secondrow-up.png">
                                 <i class="fa fa-link"></i>
                             </a>
                         </div>
@@ -248,17 +336,17 @@
                     <div class="gallery_body">
                         <img src="images/thirdrow-bottom.png" alt="">
                         <div class="overlay">
-                            <a href="#">
+                            <a href="images/secondrow-up.png">
                                 <i class="fa fa-link"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-3 col-sm-12  col-md-6">
+                <div class="col-3 col-sm-12  col-md-6  col-lg-3  filtr-item" data-category="1,3" data-sort="value">
                     <div class="gallery_body">
                         <img src="images/fourthrow-up.png" alt="">
                         <div class="overlay">
-                            <a href="#">
+                            <a href="images/secondrow-up.png">
                                 <i class="fa fa-link"></i>
                             </a>
                         </div>
@@ -266,7 +354,7 @@
                     <div class="gallery_body">
                         <img src="images/fourthrow-bottom.png" alt="">
                         <div class="overlay">
-                            <a href="#">
+                            <a href="images/secondrow-up.png">
                                 <i class="fa fa-link"></i>
                             </a>
                         </div>
@@ -285,8 +373,94 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-3 col-sm-12 col-md-6">
+            <div class="row team_slider">
+
+                <div class="col-3 col-sm-12 col-md-6 col-lg-3 mx-2">
+                    <div class="team_body">
+                        <div class="image">
+                            <img src="images/memberpic1.png" alt="">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                            </ul>
+                        </div>
+                        <h3 data-toggle="modal" class="team_modal_btn" data-name="Sajid" data-image="images/memberpic1.png" data-target="#sajal_modal">Sajid</h3>
+                        <h4>Web Designer</h4>
+                    </div>
+                </div>
+
+                <div class="col-3 col-sm-12 col-md-6  col-lg-3 mx-2">
+                    <div class="team_body">
+                        <div class="image">
+                            <img src="images/memberpic4.png" alt="">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                            </ul>
+                        </div>
+                        <h3 data-toggle="modal" class="team_modal_btn" data-name="Al amin" data-image="images/memberpic4.png" data-target="#sajal_modal">Al amin</h3>
+                        <h4>Web Designer</h4>
+                    </div>
+                </div>
+
+                <div class="col-3 col-sm-12 col-md-6  col-lg-3 mx-2">
+                    <div class="team_body">
+                        <div class="image">
+                            <img src="images/memberpic3.png" alt="">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                            </ul>
+                        </div>
+                        <h3 data-toggle="modal" class="team_modal_btn" data-name="Mainul Ahamen" data-image="images/memberpic3.png" data-target="#sajal_modal">Mainul Ahamed</h3>
+                        <h4>Web Designer</h4>
+                    </div>
+                </div>
+
+                <div class="col-3 col-sm-12 col-md-6  col-lg-3 mx-2">
+                    <div class="team_body">
+                        <div class="image">
+                            <img src="images/memberpic4.png" alt="">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                            </ul>
+                        </div>
+                        <h3 data-toggle="modal" class="team_modal_btn" data-name="Maidul Hasan" data-image="images/memberpic4.png" data-target="#sajal_modal">Maidul Hasan</h3>
+                        <h4>Web Designer</h4>
+                    </div>
+                </div>
+
+                <div class="col-3 col-sm-12 col-md-6  col-lg-3 mx-2">
+                    <div class="team_body">
+                        <div class="image">
+                            <img src="images/memberpic3.png" alt="">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                            </ul>
+                        </div>
+                        <h3 data-toggle="modal" class="team_modal_btn" data-name="Ahsan Ullah" data-image="images/memberpic3.png" data-target="#sajal_modal">Ahsan Ullah</h3>
+                        <h4>Web Designer</h4>
+                    </div>
+                </div>
+
+                <div class="col-3 col-sm-12 col-md-6  col-lg-3 mx-2">
                     <div class="team_body">
                         <div class="image">
                             <img src="images/memberpic1.png" alt="">
@@ -302,54 +476,7 @@
                         <h4>Web Designer</h4>
                     </div>
                 </div>
-                <div class="col-3 col-sm-12 col-md-6">
-                    <div class="team_body">
-                        <div class="image">
-                            <img src="images/memberpic1.png" alt="">
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
-                            </ul>
-                        </div>
-                        <h3>Sajal Sardar</h3>
-                        <h4>Web Designer</h4>
-                    </div>
-                </div>
-                <div class="col-3 col-sm-12 col-md-6">
-                    <div class="team_body">
-                        <div class="image">
-                            <img src="images/memberpic1.png" alt="">
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
-                            </ul>
-                        </div>
-                        <h3>Sajal Sardar</h3>
-                        <h4>Web Designer</h4>
-                    </div>
-                </div>
-                <div class="col-3 col-sm-12 col-md-6">
-                    <div class="team_body">
-                        <div class="image">
-                            <img src="images/memberpic1.png" alt="">
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                <li><a href="#"><i class="fab fa-skype"></i></a></li>
-                            </ul>
-                        </div>
-                        <h3>Sajal Sardar</h3>
-                        <h4>Web Designer</h4>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
@@ -365,7 +492,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-6 col-sm-12">
+                <div class="col-6 col-sm-12  col-lg-6">
                     <div class="testimonial_outer">
                         <div class="image">
                             <img src="images/testimonialright.png" alt="testimonial">
@@ -388,7 +515,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6 col-sm-12">
+                <div class="col-6 col-sm-12  col-lg-6">
                     <div class="testimonial_outer">
                         <div class="image">
                             <img src="images/testimonialright.png" alt="testimonial">
@@ -419,18 +546,19 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-3 col-sm-12">
+                <div class="col-3 col-sm-12  col-lg-3">
                     <div class="footer_body">
                         <img class="logo" src="images/footerlogo.png" alt="logo">
                         <p>
-                            Lorem ipsum dolor sit amet, conser adipisicing elit, sed do eiumod apor incididunt ut labore et dolore magna aliqua.
+                            Lorem ipsum dolor sit amet, conser adipisicing elit, sed do eiumod apor incididunt ut labore
+                            et dolore magna aliqua.
                         </p>
                         <p>
                             Lorem ipsum dolor sit amet, conser adipisicing elit.
                         </p>
                     </div>
                 </div>
-                <div class="col-3 col-sm-12">
+                <div class="col-3 col-sm-12  col-lg-3">
                     <div class="footer_body other_cols">
                         <h4>Contact us</h4>
                         <ul>
@@ -465,7 +593,7 @@
                     </div>
                 </div>
 
-                <div class="col-2 col-sm-12">
+                <div class="col-2 col-sm-12  col-lg-3">
                     <div class="footer_body other_cols">
                         <h4>Contact us</h4>
                         <ul class="footer_shorcut_links">
@@ -494,13 +622,15 @@
                     </div>
                 </div>
 
-                <div class="col-4 col-sm-12">
+                <div class="col-4 col-sm-12  col-lg-3">
 
-                    <div class=" footer_body other_cols gallery">
+                    <div class=" footer_body other_cols gallery gallery2">
                         <h4>Flikr Photos</h4>
                         <div class="row">
                             <div class="col-4">
-                                <img src="images/flikr1.png" alt="">
+                                <a href="https://www.youtube.com/watch?v=VchuKL44s6E">
+                                    <img src="images/flikr1.png" alt="">
+                                </a>
                             </div>
                             <div class="col-4">
                                 <img src="images/flikr2.png" alt="">
@@ -528,6 +658,85 @@
             Copyright &copy; 2017. All rights reserved by <a href="/">BEATLS</a>
         </p>
     </section>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="sajal_modal" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="sajal_modalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="sajal_modalLabel">Sajal Sardar</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-4">
+                            <img src="" class="w-100" id="sajal_modalImage" alt="">
+                        </div>
+                        <div class="col-8">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti esse deserunt
+                                voluptate architecto in. Amet atque animi magnam asperiores sit, officia libero hic iste
+                                quisquam porro, placeat quo eveniet illo?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti esse deserunt
+                                voluptate architecto in. Amet atque animi magnam asperiores sit, officia libero hic iste
+                                quisquam porro, placeat quo eveniet illo?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti esse deserunt
+                                voluptate architecto in. Amet atque animi magnam asperiores sit, officia libero hic iste
+                                quisquam porro, placeat quo eveniet illo?
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti esse deserunt
+                                voluptate architecto in. Amet atque animi magnam asperiores sit, officia libero hic iste
+                                quisquam porro, placeat quo eveniet illo?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti esse deserunt
+                                voluptate architecto in. Amet atque animi magnam asperiores sit, officia libero hic iste
+                                quisquam porro, placeat quo eveniet illo?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti esse deserunt
+                                voluptate architecto in. Amet atque animi magnam asperiores sit, officia libero hic iste
+                                quisquam porro, placeat quo eveniet illo?
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti esse deserunt
+                                voluptate architecto in. Amet atque animi magnam asperiores sit, officia libero hic iste
+                                quisquam porro, placeat quo eveniet illo?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti esse deserunt
+                                voluptate architecto in. Amet atque animi magnam asperiores sit, officia libero hic iste
+                                quisquam porro, placeat quo eveniet illo?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti esse deserunt
+                                voluptate architecto in. Amet atque animi magnam asperiores sit, officia libero hic iste
+                                quisquam porro, placeat quo eveniet illo?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- jQuery and JS bundle w/ Popper.js -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <script src="js/jq.js"></script>
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+    <script src="js/bootstrap.js"></script>
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <!-- <script src="js/lightbox.min.js"></script> -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/filterizr.js"></script>
+    <script src="js/siteData.js"></script>
+    <script src="js/siteDataController.js"></script>
     <script src="js/app.js"></script>
     <!-- <div class="" style="margin-top: 200px;"></div> -->
 </body>
