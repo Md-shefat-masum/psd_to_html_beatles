@@ -20,9 +20,7 @@ $.get('http://sas.sobujdiganta.com/getData.php', function (e) {
     
             if (key === 'header_logo') {
                 $(`#${key}`).attr('src', element.content);
-
                 makeTAble(key,element)
-    
             } else if (key === 'header_social_links') {
                 // console.log(key, element);
                 let social_icons_list = '';
@@ -88,7 +86,7 @@ $.get('http://sas.sobujdiganta.com/getData.php', function (e) {
                 
                 if(typeof value !== 'undefined'){
                     console.log(value);
-                    siteData[key] = value;
+                    siteData[key].content = value;
                 }
             }
         }
