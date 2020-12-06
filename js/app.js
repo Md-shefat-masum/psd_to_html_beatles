@@ -104,3 +104,59 @@ $(document).ready(function () {
 
     $('.filter-container').filterizr();
 })
+
+
+// let student = new Object();
+
+// student.name = 'sulaiman'
+// student.last_name = 'mainul vai'
+
+let student = {
+    name: 'sulaiman',
+    last_name: 'biswas',
+
+    academic_information: {
+        versity: 'National Universtiy',
+        subject: 'Chemestry',
+        session: '2018-19'
+    },
+
+    personal_information: {
+        carent_address: {
+            house_no: '4 no road',
+        },
+        permenent_address: {
+            house_no: '4 no road',
+            parental_information:{
+                father:'',
+                mother:"",
+
+                alternative: {
+                    relation: 'boro vai',
+                    name: 'korim'
+                }
+
+            }
+        },
+    }
+
+};
+
+// let a = b = c = d = e = 0;
+// c= 10;
+// console.log(a,b,c,d,e);
+
+// key = 'permenent_address';
+// let editedname  = student.personal_information.permenent_address.parental_information.alternative.name = 'rahim';
+// console.log(student.personal_information[key], editedname);
+
+for (const key in student) {
+    if (student.hasOwnProperty(key)) {
+        const element = student[key];
+        console.log(key, element)
+
+        if( key === 'academic_information'){
+            
+        }
+    }
+}
