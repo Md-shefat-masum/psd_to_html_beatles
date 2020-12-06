@@ -3,32 +3,35 @@
 // console.log(siteData.three);
 // console.log(siteData.two);
 
-for (const key in siteData) {
-    if (siteData.hasOwnProperty(key)) {
-        const element = siteData[key];
+$.get('http://mydata.sobujdiganta.com/getData.php', function (e) {
+    siteData = JSON.parse(e);
 
-        if (key === 'header_logo') {
-            $(`#${key}`).attr('src', element.content);
+    for (const key in siteData) {
+        if (siteData.hasOwnProperty(key)) {
+            const element = siteData[key];
 
-        } else if (key === 'header_social_links') {
-            // console.log(key, element);
-            let social_icons_list = '';
-            for (const slink in element) {
-                if (element.hasOwnProperty(slink)) {
-                    const element2 = element[slink];
-                    social_icons_list += `<li><a href="${element2.link}"><i class="${element2.icon}"></i></a></li>`;
-                    // console.log(element2,social_icons_list);
-                    $('#header_social_links').html(social_icons_list);
+            if (key === 'header_logo') {
+                $(`#${key}`).attr('src', element.content);
+
+            } else if (key === 'header_social_links') {
+                // console.log(key, element);
+                let social_icons_list = '';
+                for (const slink in element) {
+                    if (element.hasOwnProperty(slink)) {
+                        const element2 = element[slink];
+                        social_icons_list += `<li><a href="${element2.link}"><i class="${element2.icon}"></i></a></li>`;
+                        // console.log(element2,social_icons_list);
+                        $('#header_social_links').html(social_icons_list);
+                    }
                 }
-            }
 
-        } else if (key === 'banner') {
-            // console.log(key,element);
-            let banner_list = '';
-            for (const banner in element) {
-                if (element.hasOwnProperty(banner)) {
-                    const element2 = element[banner];
-                    banner_list += `
+            } else if (key === 'banner') {
+                // console.log(key,element);
+                let banner_list = '';
+                for (const banner in element) {
+                    if (element.hasOwnProperty(banner)) {
+                        const element2 = element[banner];
+                        banner_list += `
                             <div style="
                                     background-image: url('${element2.image}');
                                     background-repeat: no-repeat;
@@ -56,23 +59,26 @@ for (const key in siteData) {
                             </div>
                         </div>
                     `;
-                    // console.log(banner_list);
-                    $('#banner').html(banner_list);
+                        // console.log(banner_list);
+                        $('#banner').html(banner_list);
+                    }
                 }
+            } else {
+                $(`#${key}`).html(element.content);
             }
-        } else {
-            $(`#${key}`).html(element.content);
+
+
+            // $('#'+key).html(element.content);
+
+            // console.log( key, element );
+
+            // console.log($(`#${key}`));
         }
-
-
-        // $('#'+key).html(element.content);
-
-        // console.log( key, element );
-
-        // console.log($(`#${key}`));
     }
-}
+
+    initall();
+});
 
 
 
-// $('#top_gretting').html('test')
+        // $('#top_gretting').html('test')
