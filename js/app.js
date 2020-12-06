@@ -111,36 +111,36 @@ $(document).ready(function () {
 // student.name = 'sulaiman'
 // student.last_name = 'mainul vai'
 
-let student = {
-    name: 'sulaiman',
-    last_name: 'biswas',
+// let student = {
+//     name: 'sulaiman',
+//     last_name: 'biswas',
 
-    academic_information: {
-        versity: 'National Universtiy',
-        subject: 'Chemestry',
-        session: '2018-19'
-    },
+//     academic_information: {
+//         versity: 'National Universtiy',
+//         subject: 'Chemestry',
+//         session: '2018-19'
+//     },
 
-    personal_information: {
-        carent_address: {
-            house_no: '4 no road',
-        },
-        permenent_address: {
-            house_no: '4 no road',
-            parental_information:{
-                father:'',
-                mother:"",
+//     personal_information: {
+//         carent_address: {
+//             house_no: '4 no road',
+//         },
+//         permenent_address: {
+//             house_no: '4 no road',
+//             parental_information:{
+//                 father:'',
+//                 mother:"",
 
-                alternative: {
-                    relation: 'boro vai',
-                    name: 'korim'
-                }
+//                 alternative: {
+//                     relation: 'boro vai',
+//                     name: 'korim'
+//                 }
 
-            }
-        },
-    }
+//             }
+//         },
+//     }
 
-};
+// };
 
 // let a = b = c = d = e = 0;
 // c= 10;
@@ -150,13 +150,24 @@ let student = {
 // let editedname  = student.personal_information.permenent_address.parental_information.alternative.name = 'rahim';
 // console.log(student.personal_information[key], editedname);
 
-for (const key in student) {
-    if (student.hasOwnProperty(key)) {
-        const element = student[key];
-        console.log(key, element)
+// for (const key in student) {
+//     if (student.hasOwnProperty(key)) {
+//         const element = student[key];
+//         // console.log(key, element)
 
-        if( key === 'academic_information'){
-            
-        }
-    }
-}
+//         if( key === 'academic_information'){
+//             for (const key2 in element) {
+//                 if (element.hasOwnProperty(key2)) {
+//                     const element2 = element[key2];
+//                     // console.log(element2);
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// let json = JSON.stringify(student);
+
+// console.log(student, json);
+
+// console.log(JSON.parse(json).name);
