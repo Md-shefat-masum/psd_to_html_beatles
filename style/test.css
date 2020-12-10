@@ -1,0 +1,44 @@
+.br {
+  border: 1px solid red;
+}
+.primary {
+  color: #2aa54f;
+}
+.service_body {
+  width: 300px;
+  text-align: center;
+  border: 1px solid red;
+}
+.service_body .icon_body .icon {
+  width: 50px;
+  height: 50px;
+  border: 1px solid red;
+}
+.service_body .icon_body .icon img {
+  width: 100%;
+}
+.service_body .sevice_details h4 {
+  font-size: 22px;
+  color: #2aa54f;
+}
+.service_body .sevice_details h3 {
+  color: #2aa54f;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.service_body .sevice_details h2 {
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.service_body .sevice_details h2:hover {
+  color: blueviolet;
+}
+.service_body .sevice_details p {
+  font-size: 14px;
+}
