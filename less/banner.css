@@ -1,0 +1,19 @@
+.br {
+  border: 1px solid red;
+}
+.primary {
+  color: #2aa54f;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4d8a13;
+  color: white;
+  text-align: center;
+}
+.banner {
+  background-color: #2aa54f;
+}
+.banner img {
+  width: 50%;
+}

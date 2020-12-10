@@ -1,0 +1,101 @@
+@import 'variable.less';
+
+.service_body {
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    margin-top: 40px;
+    padding: 5px;
+
+    // &:hover .icon_body .icon::before{
+    //     background: red;
+    // }
+
+    &:hover{
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+        cursor: pointer;
+
+        .icon_body{
+            .icon{
+                &::before{
+                    background: red;
+                }
+                &::after{
+                    background: rgb(102, 76, 76);
+                }
+            }
+        }
+    }
+
+    .icon_body {
+        .icon {
+            width: 100px;
+            height: 100px;
+            padding: 20px;
+            box-sizing: border-box;
+            // .br;
+            margin: 0 auto;
+            border-radius: 50%;
+            // overflow: hidden;
+            position: relative;
+
+            &::before{
+                position: absolute;
+                content: '';
+                height: 90px;
+                width: 90px;
+                border: 1px solid black;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                border-radius: 50%;
+                z-index: -1;
+
+            }
+            &::after{
+                position: absolute;
+                content: '';
+                height: 105px;
+                width: 105px;
+                border: 1px solid black;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                border-radius: 50%;
+                z-index: -2;
+            }
+
+            img {
+                width: 90%;
+                height: 90%;
+            }
+        }
+
+    }
+
+    .sevice_details {
+        h4 {
+            font-size: 22px;
+            .primary;
+        }
+
+        h3 {
+            .primary;
+            .tr(.3s);
+        }
+
+        h2 {
+            .tr(.3s);
+            &:hover {
+                color: blueviolet;
+            }
+        }
+
+        
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+}

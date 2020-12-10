@@ -1,0 +1,30 @@
+@color: blue;
+@color2:rgb(37, 133, 112);
+@color3:rgb(77, 138, 19);
+@white: white;
+.br {
+    border: 1px solid red;
+}
+
+@primary: rgb(42, 165, 79);
+
+.primary {
+    color: @primary;
+}
+
+.tr(@t) {
+    transition: all linear @t;
+    -webkit-transition: all linear @t;
+    -moz-transition: all linear @t;
+    -ms-transition: all linear @t;
+    -o-transition: all linear @t;
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: @color3;
+    color: @white;
+    text-align: center;
+}
